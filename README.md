@@ -1,6 +1,7 @@
 # CARE ver 1.0
 Gesture recognition for hospital environments via CNN neural network implemented in Keras + Theano + OpenCV
 
+Watch full video - https://youtu.be/P1NDfnRSsE0
 
 Key Requirements:
 Python 2.7.13
