@@ -1,0 +1,64 @@
+<html>
+ <head>
+
+
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://code.s4d.io/widget-space/production/main.css">
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://code.s4d.io/widget-space/production/bundle.js"></script>
+
+   <link rel="stylesheet" href="mystyle.css">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+ </head>
+ <body>
+
+    <div class="container-fluid">
+        <div class="row">
+             <div class="col">
+                 <h1>Live Feed</h1>
+             </div>
+             <div class="col">
+                 <h1>Talk to Grandpa</h1>
+                 <a href="callPatient.html" class="btn btn-primary btn-lg callbutton">Call</a>
+             </div>
+        </div>
+
+        <div class="row">
+             <div class="col">
+                 <div id="logs-space" ></div>
+             </div>
+             <div class="col">
+                 <div id="communication-space" ></div>
+             </div>
+        </div>
+    </div>
+
+
+   <script>
+
+     var widget = document.getElementById('logs-space');
+     // Init a new widget
+     ciscospark.widget(widget).spaceWidget({
+       accessToken: 'M2YyZjFkNDgtZjdmNi00ZDY4LTg2NGQtYmY0OWQ3M2VlN2IyOWE5OWYzODUtNDgw',
+       spaceId: 'Y2lzY29zcGFyazovL3VzL1JPT00vYjBjODQ0ZDAtYzc1Mi0xMWU3LWE5NjQtYTkwNzc5MjFhYmYx'
+     });
+
+
+     widget = document.getElementById('communication-space');
+     // Init a new widget
+     ciscospark.widget(widget).spaceWidget({
+       accessToken: 'M2YyZjFkNDgtZjdmNi00ZDY4LTg2NGQtYmY0OWQ3M2VlN2IyOWE5OWYzODUtNDgw',
+       spaceId: 'Y2lzY29zcGFyazovL3VzL1JPT00vYmFlMTQyYTAtYzc1Mi0xMWU3LWI0YzMtNTEzZjBiNDIwYzNm'
+     });
+   </script>
+
+
+   <script>
+
+   </script>
+ </body>
+
+</html>
